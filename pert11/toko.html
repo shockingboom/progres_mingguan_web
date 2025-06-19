@@ -1,0 +1,15 @@
+<body>
+  <ul id="daftar-produk"></ul>
+
+  <script>
+    fetch("produk.json")
+      .then(res => res.json())
+      .then(data => {
+        let output = "";
+        data.forEach(item => {
+          output += `<li>${item.nama} - Rp${item.harga}</li>`;
+        });
+        document.getElementById("daftar-produk").innerHTML = output;
+      });
+  </script>
+</body>
