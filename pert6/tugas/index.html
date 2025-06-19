@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Identitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Identitas</h2>
+        <form class="form" id="formIdentitas" >
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" id="nama" required>
+
+            <label for="nim">NIM</label>
+            <input type="text" name="nim" id="nim" required>
+
+            <label for="nilai">Nilai</label>
+            <input type="number" name="nilai" id="nilai" required>
+            <div class="btn-conteiner">
+            <button class="btn" type="submit">Kirim</button></div>
+        </form>
+        <h2 id="hiden" ">Hasil Nilai</h2>
+        <table class="table" id="tb" border="1">
+            <thead class="thead" id="tbHead" ">
+                <tr>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Nilai</th>
+                </tr>
+            </thead>
+            <tbody class="tbody" id="tbBody"">
+         
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

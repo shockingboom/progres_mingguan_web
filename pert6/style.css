@@ -1,0 +1,118 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #434343);
+    color: white; 
+}
+
+#hiden{
+    display: none;
+}
+
+.container {
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: rgba(30, 30, 30, 0.9);
+    color: white; 
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #555; 
+    background: #222; 
+    color: white;
+}
+
+
+.btn-conteiner{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+
+button {
+    width: 40%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #434343;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #41444f;
+}
+
+
+
+
+.table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.thead {
+    background: #292b30;    
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    display: none;
+}
+
+.thead th {
+    padding: 12px;
+}
+
+.tbody {
+    display: none;
+}
+
+.tbody tr {
+    transition: background 0.3s ease;
+}
+
+.tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tbody tr:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.3);
+}
